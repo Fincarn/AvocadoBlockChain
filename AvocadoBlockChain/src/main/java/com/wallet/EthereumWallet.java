@@ -35,7 +35,7 @@ public class EthereumWallet {
 
     private final static String IPC_SOCKET_PATH = "/opt/apps/geth.ipc";
     private final static String URL_JSON_RPC = "http://127.0.0.1:8545";
-    private final static String WALLET_PATH = "C:/Users/Kbubs DELL/Desktop/Avocado/Demo";
+    private final static String WALLET_PATH = "[Insert Wallet Path]";
     private final static boolean USING_IPC = false;
     private final static boolean DEBUG = false;
     private static final String WALLET_PASSWORD = "123456";
@@ -74,7 +74,7 @@ public class EthereumWallet {
                 System.setProperty("org.apache.commons.logging.simplelog.log.org.apache.http.wire", "DEBUG");
                 System.setProperty("org.apache.commons.logging.simplelog.log.org.web3j.protocol.ipc", "DEBUG");
             }
-            web3j = Web3j.build(new HttpService("https://mainnet.infura.io/v3/a06d5575499f48a5976182b4c6285ab5"));
+            web3j = Web3j.build(new HttpService("[Generate Http Service url]"));
             //web3j = Web3j.build(new HttpService());
         }
         
